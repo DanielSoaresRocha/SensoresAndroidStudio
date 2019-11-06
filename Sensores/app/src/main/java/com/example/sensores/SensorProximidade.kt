@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 //import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class SensorProximidade : AppCompatActivity() {
     private var mSensorManager : SensorManager? = null
     private var mProx : Sensor? = null
 
@@ -24,13 +24,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
         mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager?
         mProx = mSensorManager?.getDefaultSensor(Sensor.TYPE_LIGHT)
 
         mSensorManager?.registerListener(ProxSensor(),mProx,SensorManager.SENSOR_DELAY_FASTEST)
-
-
     }
 
     internal inner class ProxSensor : SensorEventListener {
@@ -38,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun onSensorChanged(event: SensorEvent) {
             val vl = event.values[0]
-            Log.i("SENSORPROXIMIDADE", "VALOR DO SENSOR = "+ vl)
+            Log.i("SENSOR_PROXIMIDADE", "VALOR DO SENSOR = "+ vl)
 
             if (vl >= 10) {
                 imgDrake.setImageResource(R.drawable.drake2)

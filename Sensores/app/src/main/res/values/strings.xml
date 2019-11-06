@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sensores</string>
+    <string name="proximidade">proximidade</string>
+    <string name="luz">luz</string>
+    <string name="aceler_metro">acelerômetro</string>
+    <string name="girosc_pio">giroscópio</string>
 </resources>

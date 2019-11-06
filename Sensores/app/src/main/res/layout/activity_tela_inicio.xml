@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicio"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensores:"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:paddingVertical="40sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/proximidadeBtn"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="@string/proximidade"
+            />
+
+        <Button
+            android:id="@+id/luzBtn"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="@string/luz"
+            />
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="@string/aceler_metro"
+            />
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="@string/girosc_pio"
+            />
+    </LinearLayout>
+
+</LinearLayout>
