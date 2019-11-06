@@ -24,6 +24,11 @@ class TelaInicio : AppCompatActivity() {
             var telaLuz = Intent(this, SensorLuz::class.java)
             startActivity(telaLuz)
         }
+        acelerometroBtn.setOnClickListener {
+            var telaAcelerometro= Intent(this, SensorAcelerometro::class.java)
+            startActivity(telaAcelerometro)
+        }
+
     }
 
 }
