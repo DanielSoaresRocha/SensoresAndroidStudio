@@ -15,7 +15,7 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_sensor_luz.*
 
 
-class SensorLuz : AppCompatActivity() {
+class Luz : AppCompatActivity() {
     var mLuz : Sensor? = null
     var mSensorManager : SensorManager? = null
 

@@ -7,12 +7,10 @@ import android.hardware.SensorManager
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_sensor_acelerometro.*
 
 
-
-
-
-class SensorAcelerometro : AppCompatActivity(){
+class Acelerometro : AppCompatActivity(){
     //var acelerometro : SensorClass? = null
     private var mSensorManager: SensorManager? = null
     private var mAcelerometro: Sensor? = null
@@ -41,9 +39,15 @@ class SensorAcelerometro : AppCompatActivity(){
         override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {}
 
         override fun onSensorChanged(event: SensorEvent) {
-            val vl = event.values[0]
+            val x = event.values[0]
+            val y = event.values[1]
+            val z = event.values[2]
 
-            Log.i("SENSOR_ACELEROMETRO", "VALOR DO SENSOR = "+ vl)
+            Log.i("SENSOR_ACELEROMETRO", "VALOR DO SENSOR = "+x+" "+y+" "+z)
+
+            acelerometroX.setText(x.toString())
+            acelerometroY.setText(y.toString())
+            acelerometroZ.setText(z.toString())
 
         }
     }

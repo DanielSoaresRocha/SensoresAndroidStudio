@@ -16,17 +16,21 @@ class TelaInicio : AppCompatActivity() {
 
     fun listener(){
         proximidadeBtn.setOnClickListener {
-            var telaProximidade = Intent(this, SensorProximidade::class.java)
+            var telaProximidade = Intent(this, Proximidade::class.java)
             startActivity(telaProximidade)
         }
 
         luzBtn.setOnClickListener {
-            var telaLuz = Intent(this, SensorLuz::class.java)
+            var telaLuz = Intent(this, Luz::class.java)
             startActivity(telaLuz)
         }
         acelerometroBtn.setOnClickListener {
-            var telaAcelerometro= Intent(this, SensorAcelerometro::class.java)
+            var telaAcelerometro= Intent(this, Acelerometro::class.java)
             startActivity(telaAcelerometro)
+        }
+        giroscopioBtn.setOnClickListener {
+            var telaGiroscopio = Intent(this, Giroscopio::class.java)
+            startActivity(telaGiroscopio)
         }
 
     }

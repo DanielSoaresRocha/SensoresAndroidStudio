@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 //import kotlinx.android.synthetic.main.activity_main.*
 
-class SensorProximidade : AppCompatActivity() {
+class Proximidade : AppCompatActivity() {
     private var mSensorManager : SensorManager? = null
     private var mProx : Sensor? = null
 

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,7 +25,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/acelerometroX"
+            android:id="@+id/giroscopioX"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
@@ -40,7 +41,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/acelerometroY"
+            android:id="@+id/giroscopioY"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
@@ -56,7 +57,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/acelerometroZ"
+            android:id="@+id/giroscopioZ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
